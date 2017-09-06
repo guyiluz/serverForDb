@@ -12,6 +12,11 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
 app.use('/api',require('./routes/api'))
+app.get('/',(req,res)=>{
+
+    res.send('please use the /api')
+})
+
 
 
 
