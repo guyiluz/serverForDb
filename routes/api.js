@@ -8,6 +8,6 @@ var q = require('../models/q.js')
 
 
 q.methods(['get', 'post'])
-q.register(router,'/q')
+q.register(router,'/')
 
 module.exports=router
